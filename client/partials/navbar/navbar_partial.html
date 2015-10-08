@@ -1,0 +1,15 @@
+<template name="navbarPartial">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{{pathFor route='home'}}">Test10 GAPI</a>
+                <p class="navbar-text">
+                  {{#if currentUser}}
+                    | <a href="{{pathFor route='map'}}" class="navbar-link">Map</a> | &nbsp;
+                  {{/if}}
+                    {{> loginButtons}}
+                </p>
+            </div>
+        </div>
+    </nav>
+</template>

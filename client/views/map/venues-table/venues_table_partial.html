@@ -1,0 +1,28 @@
+<template name="venuesTablePartial">
+    <div class="table-responsive">
+      <table class="table table-striped venues-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Street Address</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          {{#each venuesList}}
+            <tr>
+              <td class="td1">{{name}}</td>
+              <td class="td2">{{city}}</td>
+              <td class="td3">{{street}}</td>
+              <td class="td4">{{formatNumber lat}}</td>
+              <td class="td5">{{formatNumber lng}}</td>
+            </tr>
+          {{/each}}
+
+        </tbody>
+      </table>
+    </div>
+</template>

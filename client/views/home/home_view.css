@@ -1,0 +1,26 @@
+.top70 {
+	margin-top: 70px;
+}
+#home-view .top-img-div {
+	width: 150px;
+	margin: 0 auto;
+	text-align: center;
+	border: 2px solid #337ab7;
+	border-radius: 35px;
+}
+#home-view .top-img {
+	width: 125px;
+}
+#home-view .top-text {
+	text-align: center;
+	margin-top: 10px;
+	background-color: #fefdeb;
+}
+#home-view p {
+	font-size: 14pt; 
+	font-family: Verdana; 
+	color: #1c4587; /*darkblue;*/
+}
+.login-text-and-button div {
+    color: blanchedalmond;
+}

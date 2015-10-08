@@ -1,0 +1,24 @@
+<template name="mapView">
+    <section id="map-view">
+        <div class="row">
+            <div class="col-xs-11 col-sm-11 map-wrapper">
+
+			{{#if prevQueries.count}}
+			  {{> prevQueriesTablePartial prevQueriesList=prevQueries}}
+			{{/if}}
+
+            <h3>Find the best venues <img src="img/loading.gif" id="loading-gif" class="loading"></h3>
+			<input type="text" id="venue-query" placeholder="Search for" class="search">
+			<div class="map-container">
+				{{> googleMap name="mainMap" options=mainMapOptions}}
+			</div>
+
+			{{#if venues.length}}
+			  <h3>{{venues.length}} venues</h3>
+			  {{> venuesTablePartial venuesList=venues}}
+			{{/if}}
+
+            </div>
+        </div>
+    </section>
+</template>

@@ -1,0 +1,20 @@
+<template name="prevQueriesTablePartial">
+    <div class="table-responsive">
+      <table class="table table-striped prev-queries-table">
+        <tbody id="queries-table">
+
+          {{#each prevQueriesList}}
+            <tr data-doc-id="{{_id}}">
+              <td class="td1">{{query}}</td>
+              <td class="td2">{{formatNumber latitude}}</td>
+              <td class="td3">{{formatNumber longitude}}</td>
+              <td class="td4">{{formatRadius radius}}</td>
+              <td class="td5">{{formatDate date}}</td>
+              <td class="td6 delete-btn"><img src="img/delete.png" class="delete-btn" alt="Delete the query" title="Delete the query"></td>
+            </tr>
+          {{/each}}
+
+        </tbody>
+      </table>
+    </div>
+</template>

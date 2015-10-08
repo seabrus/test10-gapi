@@ -1,0 +1,29 @@
+.prev-queries-table {
+  width:100%;
+  max-width: 600px;
+}
+#queries-table .td1 {
+  width: 20%;
+  font-size: 17px;
+}
+#queries-table .td2 {
+  width: 20%;
+  font-size: 17px;
+}
+#queries-table .td3 {
+  width: 20%;
+  font-size: 17px;
+}
+#queries-table .td4 {
+  width: 16%;
+  font-size: 17px;
+}
+#queries-table .td5 {
+  width: 20%;
+  font-size: 17px;
+}
+#queries-table .td6 {
+  width: 4%;
+  font-size: 17px;
+  cursor: pointer;
+}

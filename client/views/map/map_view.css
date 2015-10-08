@@ -1,0 +1,19 @@
+.loading {
+  margin-left:10px;
+  display: none;
+}
+
+.map-wrapper .search {
+  width:100%;
+  max-width: 600px;
+  margin-bottom:10px;
+  border:2px solid black;
+  padding: 0 7px;
+  font-size: 16pt;
+}
+
+.map-wrapper .map-container {
+  width: 600px;
+  max-width: 100%;
+  height: 400px;
+}
