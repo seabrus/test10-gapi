@@ -1,11 +1,11 @@
-MapController = Iron.RouteController.extend( {
+MapController = Iron.RouteController.extend({
   template: 'mapView',
 
   subscriptions: function() {
     return Meteor.subscribe('venueQueries');
   },
 
-  action: function () {
+  action: function() {
     if (this.ready()) {
       this.render();
     } else {

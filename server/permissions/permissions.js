@@ -9,5 +9,5 @@ VenueQueries.allow({
   insert: userIsCorrect,
   update: ownsDoc,
   remove:  ownsDoc,
-  fetch: [ 'ownerId' ]
+  fetch: ['ownerId']
 });

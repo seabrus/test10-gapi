@@ -2,8 +2,7 @@
   margin-left:10px;
   display: none;
 }
-
-.map-wrapper .search {
+#map-view .search {
   width:100%;
   max-width: 600px;
   margin-bottom:10px;
@@ -11,9 +10,35 @@
   padding: 0 7px;
   font-size: 16pt;
 }
-
-.map-wrapper .map-container {
+#map-view .map-container {
   width: 600px;
   max-width: 100%;
   height: 400px;
+}
+
+#map-view .venue-table-header {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 15px;
+  font-size: 16pt;
+}
+#map-view .venue-table-header-left {
+  display: inline-block;
+  float: left;
+  font-size: 16pt;
+}
+#map-view .venue-table-header-left p {
+  font-weight: bold;
+}
+#map-view .venue-table-header-right {
+  display: inline-block;
+  float: right;
+  font-size: 16pt;
+}
+#map-view .export-csv-btn {
+  background-color: #fff;
+  border: 2px solid darkgrey;
+  border-radius: 5px;
+  color: #333;
+  text-align: center;
 }

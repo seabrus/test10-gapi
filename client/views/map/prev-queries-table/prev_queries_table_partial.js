@@ -22,13 +22,13 @@ Template.prevQueriesTablePartial.helpers({
   formatNumber: function(n) {
     return n.toFixed(4);
   },
-  
+
   formatRadius: function(n) {
     var nKm = (n / 1000).toFixed(2);
     return nKm + 'km';
   },
-  
+
   formatDate: function(d) {
     return d.toString().slice(4, 11) + d.toString().slice(16, 21);
-  }, 
+  },
 });

@@ -1,24 +1,42 @@
 <template name="mapView">
     <section id="map-view">
         <div class="row">
-            <div class="col-xs-11 col-sm-11 map-wrapper">
-
-			{{#if prevQueries.count}}
-			  {{> prevQueriesTablePartial prevQueriesList=prevQueries}}
-			{{/if}}
-
-            <h3>Find the best venues <img src="img/loading.gif" id="loading-gif" class="loading"></h3>
-			<input type="text" id="venue-query" placeholder="Search for" class="search">
-			<div class="map-container">
-				{{> googleMap name="mainMap" options=mainMapOptions}}
-			</div>
-
-			{{#if venues.length}}
-			  <h3>{{venues.length}} venues</h3>
-			  {{> venuesTablePartial venuesList=venues}}
-			{{/if}}
-
+            <div class="col-xs-11 col-sm-11">
+                {{#if prevQueries.count}}
+                  {{> prevQueriesTablePartial prevQueriesList=prevQueries}}
+                {{/if}}
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-xs-11 col-sm-11">
+                <h4>Type in a venue query and press Enter <img src="img/loading.gif" id="loading-gif" class="loading"></h4>
+                <input type="text" id="venue-query" placeholder="Restaurant" class="search">
+                <div class="map-container">
+                    {{> googleMap name="mainMap" options=mainMapOptions}}
+                </div>
+            </div>
+        </div>
+
+       {{#if venues.length}}
+        <div class="row">
+            <div class="col-xs-11 col-sm-11">
+                  <div class="venue-table-header">
+                      <div class="venue-table-header-left">
+                          <p>{{venues.length}} venues</p>
+                      </div>&nbsp;
+                      <div class="venue-table-header-right">
+                         <button type="button" class="export-csv-btn" title="Export venues in a CSV file">Export CSV</button>
+                      </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-11 col-sm-11">
+                {{> venuesTablePartial venuesList=venues}}
+           </div>
+        </div>
+        {{/if}}
+
     </section>
 </template>
